@@ -13,7 +13,7 @@
                             </li>
                             <li class="breadcrumb-item"><a href="{{route('admin.vendor')}}"> الاقسام الرئيسية </a>
                             </li>
-                            <li class="breadcrumb-item active">إضافة تاجر
+                            <li class="breadcrumb-item active">إضافة متجر
                             </li>
                         </ol>
                     </div>
@@ -27,7 +27,7 @@
                     <div class="col-md-12">
                         <div class="card">
                             <div class="card-header">
-                                <h4 class="card-title" id="basic-layout-form"> إضافة تاجر </h4>
+                                <h4 class="card-title" id="basic-layout-form"> إضافة متجر </h4>
                                 <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
                                 <div class="heading-elements">
                                     <ul class="list-inline mb-0">
@@ -47,7 +47,7 @@
                                         @csrf
 
                                         <div class="form-group">
-                                            <label> لوجو التجار </label>
+                                            <label> لوجو المتجر </label>
                                             <label id="projectinput7" class="file center-block">
                                                 <input type="file" id="file" name="logo">
                                                 <span class="file-custom"></span>
@@ -67,7 +67,7 @@
                                                     <div class="form-group">
                                                         <label for="projectinput1"> الاسم </label>
                                                         <input type="text" value="" id="name"
-                                                               class="form-control"
+                                                               class="form-control" value="{{old('name')}}"
                                                                placeholder="Enter address Please  "
                                                                name="name">
                                                         @error("name")
@@ -102,7 +102,7 @@
                                                     <div class="form-group">
                                                         <label for="projectinput1"> رقم الهاتف </label>
                                                         <input type="text" id="mobile"
-                                                               class="form-control"
+                                                               class="form-control" value="{{old('mobile')}}"
                                                                placeholder="Enter mobile Please  " name="mobile">
 
                                                         @error("mobile")
@@ -113,7 +113,7 @@
                                                 <div class="col-md-6 ">
                                                     <div class="form-group">
                                                         <label for="projectinput1"> ألبريد الالكتروني </label>
-                                                        <input type="text" id="email"
+                                                        <input type="text" id="email" value="{{old('email')}}"
                                                                class="form-control"
                                                                placeholder=" Enter email Please " name="email">
 
@@ -147,7 +147,7 @@
                                                     <div class="form-group">
                                                         <label for="projectinput1"> العنوان  </label>
                                                         <input type="text" id="pac-input"
-                                                               class="form-control"
+                                                               class="form-control" value="{{old('address')}}"
                                                                placeholder=" Enter address Please " name="address">
 
                                                         @error("address")
