@@ -18,6 +18,7 @@
                 </div>
             </div>
         </div>
+        
         <div class="content-body">
             <!-- DOM - jQuery events table -->
             <section id="dom">
