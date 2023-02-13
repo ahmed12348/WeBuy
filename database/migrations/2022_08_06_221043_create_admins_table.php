@@ -18,9 +18,13 @@ class CreateAdminsTable extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('photo')->nullable();
+
             $table->string('password');
             $table->rememberToken();
+//            $table->unsignedBigInteger('language_id');
+//            $table->foreign('language_id')->references('id')->on('languages');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

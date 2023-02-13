@@ -24,10 +24,10 @@ class LanguageRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|string|max:100',
-            'abbr' => 'required|string|max:10',
+            'title' => 'required|string|max:100',
+            'slogan' => 'required|string|max:10',
           //  'active' => 'required|in:1',
-            'direction' => 'required|in:rtl,ltr',
+
         ];
     }
 
@@ -37,10 +37,10 @@ class LanguageRequest extends FormRequest
         return [
             'required' => 'هذا الحقل مطلوب',
             'in' => 'القيم المدخلة غير صحيحة ',
-            'name.string' => 'اسم اللغة لابد ان يكون احرف',
-            'abbr.max' => 'هذا الحقل لابد الا يزيد عن 10 احرف ',
-            'abbr.string' => 'هذا الحقل لابد ان يكون احرف ',
-            'name.max' => 'اسم اللغة لابد الا يزيد عن 100 احرف ',
+            'title.string' => 'اسم اللغة لابد ان يكون احرف',
+            'slogan.max' => 'هذا الحقل لابد الا يزيد عن 10 احرف ',
+            'slogan.string' => 'هذا الحقل لابد ان يكون احرف ',
+            'title.max' => 'اسم اللغة لابد الا يزيد عن 100 احرف ',
         ];
     }
 }

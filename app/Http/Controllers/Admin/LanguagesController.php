@@ -6,10 +6,12 @@ use App\Http\Controllers\Controller;
 use App\Models\Language;
 use Illuminate\Http\Request;
 use App\Http\Requests\LanguageRequest;
+use Illuminate\Support\Facades\DB;
+
 class LanguagesController extends Controller
 {
     public function index(){
-        $languages=Language::select()->paginate(PAGINATION_COUNT);
+        $languages=Language::select()->get();
         return view('admin.languages.index',compact('languages'));
     }
     public function create(){
@@ -20,12 +22,28 @@ class LanguagesController extends Controller
     {
         // dd($request->all());
      try{
-     Language::create($request->except(['_token']));
+         if (!$request->has('active')){
+             $request->request->add(['active' => 0]);
+         }
+         else{
+             $request->request->add(['active' => 1]);
+         }
+         $filePath="";
+         if($request->has('img')){
+             $filePath= uploadImage('languages',$request->img);
+         }
+//         return $request->all();
+         $vendor=Language::create([
+             'title' => $request->title,
+             'slogan' => $request->slogan,
+             'active' => $request->active,
+             'img' =>$filePath
+         ]);
 
       return redirect()->route('admin.languages')->with(['success'=>' تم اضافة اللغة بنجاح']);
-
        }
      catch(\Exception $ex){
+         dd($ex);
        return redirect()->route('admin.languages')->with(['error'=>'   هناك خطا ما يرجي اعادة المحاولة']);
        }
 
@@ -42,26 +60,37 @@ class LanguagesController extends Controller
 
     public function update(LanguageRequest $request,$id)
     {
-
-
-
       try{
         $language=Language::find($id);
 
         if(!$language){
           return redirect()->route('admin.languages.edit',$id)->with(['error' =>'هذة اللغة غير موجودة']);
         }
-          if(!$request->has('active'))
-          $request->request->add(['active'=>0]);
-        $language->update($request->except(['_token']));
+          //  update active
+          if (!$request->has('active')){
+              $request->request->add(['active' => 0]);}
+          else{
+              $request->request->add(['active' => 1]);
+          }
+
+          DB::beginTransaction();
+          // ***** update logo *****
+          $filePath='';
+          if($request->has('img')){
+              $filePath= uploadImage('languages',$request->img);
+              Language::where('id', $id)->update([
+                  'img'=>$filePath,
+              ]);
+          }
+
+          $language->update($request->except(['_token','img']));
+//          return $language;
+          DB::commit();
          return redirect()->route('admin.languages')->with(['success'=>' تم تعديل اللغة بنجاح']);
 
           }
         catch(\Exception $ex){
-
-
             return redirect()->route('admin.languages')->with(['error'=>'   هناك خطا ما يرجي اعادة المحاولة']);
-
     }
 
      }
@@ -69,18 +98,13 @@ class LanguagesController extends Controller
      public function destroy($id){
      try{
         $language=Language::find($id);
-
         if(!$language){
           return redirect()->route('admin.languages')->with(['error' =>'هذة اللغة غير موجودة']);
         }
         $language->delete();
-
          return redirect()->route('admin.languages')->with(['success'=>' تم حذف اللغة بنجاح']);
-
           }
         catch(\Exception $ex){
-
-
             return redirect()->route('admin.languages')->with(['error'=>'   هناك خطا ما يرجي اعادة المحاولة']);
 
     }

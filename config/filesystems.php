@@ -59,6 +59,25 @@ return [
             'url' => env('AWS_URL') .'/public',
             'visibility' => 'public',
         ],
+        'languages' => [
+            'driver' => 'local',
+            'root' => base_path().'/assets/images/languages',
+            'url' => env('AWS_URL') .'/public',
+            'visibility' => 'public',
+        ],
+        'products' => [
+            'driver' => 'local',
+            'root' => base_path().'/assets/images/products',
+            'url' => env('AWS_URL') .'/public',
+            'visibility' => 'public',
+        ],
+
+        'subCategory' => [
+    'driver' => 'local',
+    'root' => base_path().'/assets/images/subCategory',
+    'url' => env('AWS_URL') .'/public',
+    'visibility' => 'public',
+],
 
         'vendors' => [
             'driver' => 'local',

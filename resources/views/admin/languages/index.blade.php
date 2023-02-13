@@ -47,7 +47,7 @@
                                             <tr>
                                                 <th> الاسم</th>
                                                 <th>الاختصار</th>
-                                                <th>اتجاه</th>
+                                                <th>الصورة</th>
                                                 <th>الحالة</th>
                                                 <th>الإجراءات</th>
                                             </tr>
@@ -57,10 +57,11 @@
                                             @isset($languages)
                                             @foreach($languages as $language)
                                             <tr>
-                                                <td>{{$language -> name}}</td>
-                                                <td>{{$language -> abbr}}</td>
+                                                <td>{{$language -> title}}</td>
+                                                <td>{{$language -> slogan}}</td>
 
-                                                <td>{{$language -> direction}}</td>
+                                                <td><img style="width: 150px; height: 100px;"
+                                                         src="{{$language->img}}"></td>
                                                 <td>{{$language -> getActive()}}</td>
 
                                                 <td>

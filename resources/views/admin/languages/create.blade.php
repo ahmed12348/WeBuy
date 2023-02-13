@@ -13,7 +13,7 @@
                             </li>
                             <li class="breadcrumb-item"><a href="{{route('admin.languages')}}"> أللغات </a>
                             </li>
-                            <li class="breadcrumb-item active">إضافة لغة
+                            <li class="breadcrumb-item active"> إضافة لغة
                             </li>
                         </ol>
                     </div>
@@ -27,7 +27,7 @@
                     <div class="col-md-12">
                         <div class="card">
                             <div class="card-header">
-                                <h4 class="card-title" id="basic-layout-form"> إضافة لغة </h4>
+                                <h4 class="card-title" id="basic-layout-form">  إضافة لغة </h4>
                                 <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
                                 <div class="heading-elements">
                                     <ul class="list-inline mb-0">
@@ -47,15 +47,15 @@
                                         @csrf
 
                                         <div class="form-body">
-                                            <h4 class="form-section"><i class="ft-home"></i> بيانات اللغة </h4>
+                                            <h4 class="form-section"><i class="ft-home"></i> بيانات اللغة  </h4>
 
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label for="projectinput1"> اسم اللغة </label>
-                                                        <input type="text" value="" id="name" class="form-control"
-                                                            placeholder="ادخل اسم اللغة  " name="name">
-                                                        @error('name')
+                                                        <input type="text" value="" id="title" class="form-control"
+                                                            placeholder="Add title Here " name="title">
+                                                        @error('title')
                                                         <span class="text-danger">{{$message}}</span>
                                                         @enderror
                                                     </div>
@@ -63,10 +63,10 @@
 
                                                 <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <label for="projectinput1"> أختصار اللغة </label>
-                                                        <input type="text" value="" id="name" class="form-control"
-                                                            placeholder="ادخل أختصار اللغة  " name="abbr">
-                                                        @error('abbr')
+                                                        <label for="projectinput1"> الاختصار  </label>
+                                                        <input type="text" value="" id="slogan" class="form-control"
+                                                            placeholder="Add Slogan Here" name="slogan">
+                                                        @error('slogan')
                                                         <span class="text-danger">{{$message}} </span>
                                                         @enderror
                                                     </div>
@@ -79,15 +79,11 @@
 
                                                 <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <label for="projectinput2"> الاتجاة </label>
-                                                        <select name="direction" class="select2 form-control">
-                                                            <optgroup label="من فضلك أختر اتجاه اللغة ">
-                                                                <option value="rtl">من اليمين الي اليسار</option>
-                                                                <option value="ltr">من اليسار الي اليمين</option>
-                                                            </optgroup>
-                                                        </select>
-                                                        @error('direction')
-                                                        <span class="text-danger">{{$message}}</span>
+                                                        <label for="projectinput1"> الصورة  </label><br>
+                                                        <input type="file" value="" id="img"
+                                                             required  placeholder="Add img Here" name="img">
+                                                        @error('img')
+                                                        <span class="text-danger">{{$message}} </span>
                                                         @enderror
                                                     </div>
                                                 </div>
@@ -100,8 +96,7 @@
                                                         <input type="checkbox" value="1" name="active"
                                                             id="switcheryColor4" class="switchery" data-color="success"
                                                             checked />
-                                                        <label for="switcheryColor4" class="card-title ml-1">الحالة
-                                                        </label>
+                                                        <label for="switcheryColor4" class="card-title ml-1">الحالة</label>
 
                                                         @error('active')
                                                         <span class="text-danger">{{$message}}</span>

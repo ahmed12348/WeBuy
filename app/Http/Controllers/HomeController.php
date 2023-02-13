@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\MainCategory;
+use App\Models\Product;
+use App\Models\SubCategory;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -11,18 +14,17 @@ class HomeController extends Controller
      *
      * @return void
      */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+//    public function __construct()
+//    {
+//        $this->middleware('auth');
+//    }
 
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
+
     public function index()
     {
-        return view('home');
+        $data['products']=Product::where('language_id',auth()->user()->language_id)->get();
+//        $data['products_new']=Product::orderBy('created_at', 'DESC')->paginate(5);
+        return view('front.home',$data);
     }
 }
+

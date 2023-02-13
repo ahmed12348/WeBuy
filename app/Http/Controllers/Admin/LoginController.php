@@ -18,8 +18,8 @@ class LoginController extends Controller
     public function save()
     {
         $admin = new Admin();
-        $admin->name='ahmed mahmoud';
-        $admin->email='ahmedmahmoud43@ymail.com';
+        $admin->name='admin';
+        $admin->email='admin@gmail.com';
         $admin->password=bcrypt('123456');
         $admin->save();
 
@@ -32,7 +32,7 @@ class LoginController extends Controller
         $remember_me = $request->has('remember_me') ? true : false;
 
         if (auth()->guard('admin')->attempt(['email' => $request->input("email"), 'password' => $request->input("password")], $remember_me)) {
-        
+
             // notify()->success('تم الدخول بنجاح  ');
             return redirect()->route('admin.dashboard');
         }

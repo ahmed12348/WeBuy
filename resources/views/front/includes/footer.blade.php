@@ -1,257 +1,186 @@
-<footer class="footer footer-one">
-    <div class="inner-footer">
+<!-- ============================================================= FOOTER ============================================================= -->
+<footer id="footer" class="footer color-bg">
+    <div class="footer-bottom">
         <div class="container">
             <div class="row">
-                <div class="nov-row footer-top "  data-nov-full-width="true"><div class="nov-row-wrap row"><div class="nov-modules col-lg-12 col-md-12 newsletter"><div class="block nov-wrap"><div class="title_block">SIGN UP TO NEWSLETTER<span class="sub_title">Receive email-only deals, special offers & product exclusives</span></div><div class="block_newsletter">
-                                    <form action="https://demo.bestprestashoptheme.com/savemart/en/#footer" method="post">
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="address-block">
 
+                        <!-- /.module-heading -->
 
-                                        <div class="input-group">
-                                            <input type="text" class="form-control" name="email" value="" placeholder="Enter your email address">
-                                            <span class="input-group-btn">
-            <button class="btn btn-secondary effect-btn" name="submitNewsletter" type="submit">
-                <span>subscribe</span>
-            </button>
-          </span>
-                                        </div>
-                                        <input type="hidden" name="action" value="0">
-                                    </form>
-                                </div>
-                                <!-- Popup newsletter -->
-                                <div id="popup-subscribe" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="zmdi zmdi-close"></i></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <form action="https://demo.bestprestashoptheme.com/savemart/en/" method="post">
-                                                    <div class="subscribe_form d-flex justify-content-start ">
-                                                        <div class="inner">
-                                                            <div class="title_block">Sign up to Newsletter</div>
-                                                            <p>Receive email-only deals, special offers &amp; product exclusives</p>
-                                                            <div class="input-subscribe-wrap input-group">
-                                                                <input class="inputNew form-control grey newsletter-input" placeholder="Enter your email address" type="text" name="email" size="18" value="" />
-                                                                <span class="input-group-btn">
-                                    <button type="submit" name="submitNewsletter" class="btn btn-primary">Subscribe</button>
-                                </span>
-                                                                <input type="hidden" name="action" value="0" />
-                                                            </div>
-                                                            <div class="checkbox">
-                                <span class="custom-checkbox">
-                                    <input name="no-view" class="no-view" type="checkbox">
-                                    <span class="ps-shown-by-js"><i class="material-icons checkbox-checked">check</i></span>
-                                </span>
-                                                                <span>Don&#039;t show this popup again</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
+                        <div class="module-body">
+                            <ul class="toggle-footer" style="">
+                                <li class="media">
+                                    <div class="pull-left"> <span class="icon fa-stack fa-lg"> <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i> </span> </div>
+                                    <div class="media-body">
+                                        <p>ThemesGround, 789 Main rd, Anytown, CA 12345 USA</p>
                                     </div>
-                                </div>
-                            </div></div></div></div><div class="nov_row-full-width clearfix w-100"></div><div class="nov-row policy-home " style="background-color: #f4f4f4;" data-nov-full-width="true"><div class="nov-row-wrap row"><div class="nov-html col-xl-4 col-lg-4 col-md-4">
-                            <div class="block">
-                                <div class="block_content">
-                                    <div class="policy-row"><i class="noviconpolicy noviconpolicy-1"></i>
-                                        <div class="policy-content">
-                                            <div class="policy-name">Free Delivery From $ 250</div>
-                                            <div class="policy-des">Sed ut perspiciatis unde omnis iste</div>
-                                        </div>
+                                </li>
+                                <li class="media">
+                                    <div class="pull-left"> <span class="icon fa-stack fa-lg"> <i class="fa fa-mobile fa-stack-1x fa-inverse"></i> </span> </div>
+                                    <div class="media-body">
+                                        <p> + (888) 123-4567 / + (888) 456-7890</p>
                                     </div>
-                                </div>
-                            </div>
+                                </li>
+                                <li class="media">
+                                    <div class="pull-left"> <span class="icon fa-stack fa-lg"> <i class="fa fa-envelope fa-stack-1x fa-inverse"></i> </span> </div>
+                                    <div class="media-body"> <span><a href="#">marazzo@themesground.com</a></span> </div>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="nov-html col-xl-4 col-lg-4 col-md-4">
-                            <div class="block">
-                                <div class="block_content">
-                                    <div class="policy-row"><i class="noviconpolicy noviconpolicy-2"></i>
-                                        <div class="policy-content">
-                                            <div class="policy-name">Money Back Guarantee</div>
-                                            <div class="policy-des">Sed ut perspiciatis unde omnis iste natus</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="nov-html col-xl-4 col-lg-4 col-md-4">
-                            <div class="block">
-                                <div class="block_content">
-                                    <div class="policy-row"><i class="noviconpolicy noviconpolicy-3"></i>
-                                        <div class="policy-content">
-                                            <div class="policy-name">Authenticity 100% Guaranteed</div>
-                                            <div class="policy-des">Sed ut perspiciatis unde omnis iste natus error sit</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div></div><div class="nov_row-full-width clearfix w-100"></div><div class="nov-row footer-center col-lg-12 col-xs-12" ><div class="nov-row-wrap row"><div class="nov-html col-xl-3 col-lg-3 col-md-3">
-                            <div class="block">
-                                <div class="title_block">
-                                    CORPORATE INFO
-                                </div>
-                                <div class="block_content">
-                                    <ul>
-                                        <li><a href="#">Who We Are ?</a></li>
-                                        <li><a href="#">Corporate Responsibility</a></li>
-                                        <li><a href="#">California Laws</a></li>
-                                        <li><a href="#">Careers</a></li>
-                                        <li><a href="#">Privacy Policy</a></li>
-                                        <li><a href="#">Terms of Use</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="nov-html col-xl-3 col-lg-3 col-md-3">
-                            <div class="block">
-                                <div class="title_block">
-                                    MY ACCOUNT
-                                </div>
-                                <div class="block_content">
-                                    <ul>
-                                        <li><a href="#">Sitemap</a></li>
-                                        <li><a href="#">Privacy Policy</a></li>
-                                        <li><a href="#">My Account</a></li>
-                                        <li><a href="#">Advanced Search</a></li>
-                                        <li><a href="#">Contact Us</a></li>
-                                        <li><a href="#">My Wishlist</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="nov-html col-xl-3 col-lg-3 col-md-3">
-                            <div class="block">
-                                <div class="title_block">
-                                    NEED HELP
-                                </div>
-                                <div class="block_content">
-                                    <ul>
-                                        <li><a href="#">Order Tracking</a></li>
-                                        <li><a href="#">The Privacy Policy</a></li>
-                                        <li><a href="#">Payments & Returns</a></li>
-                                        <li><a href="#">Size Guide</a></li>
-                                        <li><a href="#">Product Care</a></li>
-                                        <li><a href="#">FAQ's</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="nov-html col-xl-3 col-lg-3 col-md-3">
-                            <div class="block">
-                                <div class="title_block">
-                                    FOLLOW US
-                                </div>
-                                <div class="block_content">
-                                    <ul class="list-inline social-media">
-                                        <li class="list-inline-item "><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li class="list-inline-item "><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li class="list-inline-item"><a href="#"><i class="fa fa-pinterest "></i></a></li>
-                                        <li class="list-inline-item"><a href="#"><i class="fa fa-flickr"></i></a></li>
-                                        <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                    </ul>
-                                    <div class="title_block">Opening hours</div>
-                                    <div class="content_block">
-                                        <ul>
-                                            <li>Monday To Friday : 8.00 AM - 8.00 PM</li>
-                                            <li>Satuday : 7.30 AM - 9.30 PM</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div></div><div class="nov-row address-ft " style="background-color: #f4f4f4;" data-nov-full-width="true"><div class="nov-row-wrap row"><div class="nov-html col-xl-4 col-lg-4 col-md-4">
-                            <div class="block">
-                                <div class="block_content">
-                                    <div class="d-flex flex-direction-column align-items-start"><i class="icon-location"></i>
-                                        <div class="address-content">
-                                            <p><strong> Address 1: </strong> 123 Suspendia matti, Visaosang Building VST District, NY Accums, North American</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="nov-html col-xl-4 col-lg-4 col-md-4">
-                            <div class="block">
-                                <div class="block_content">
-                                    <div class="d-flex flex-direction-column align-items-start"><i class="icon-location"></i>
-                                        <div class="address-content">
-                                            <p><strong> Address 2: </strong> 234 Windy City, Visaosang Building VST District, Chicago Accums, United States</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="nov-html col-xl-4 col-lg-4 col-md-4">
-                            <div class="block">
-                                <div class="block_content">
-                                    <p class="text-right mb-0"><img class="img-fluid" src="http://images.vinovathemes.com/prestashop_savemart/certificate.png" /></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div></div><div class="nov_row-full-width clearfix w-100"></div><div class="nov-row tags-link col-lg-12 col-xs-12" ><div class="nov-row-wrap row"><div class="nov-html col-xl-12 col-lg-12 col-md-12">
-                            <div class="block">
-                                <div class="block_content">
-                                    <ul class="list-inline">
-                                        <li class="list-inline-item"><a href="#">Nokia</a></li>
-                                        <li class="list-inline-item"><a href="#">Samsung</a></li>
-                                        <li class="list-inline-item"><a href="#">HTC</a></li>
-                                        <li class="list-inline-item"><a href="#">Laptop</a></li>
-                                        <li class="list-inline-item"><a href="#">Smartphone</a></li>
-                                        <li class="list-inline-item"><a href="#">Tablet</a></li>
-                                        <li class="list-inline-item"><a href="#">Vinova</a></li>
-                                        <li class="list-inline-item"><a href="#">Smartwatch</a></li>
-                                        <li class="list-inline-item"><a href="#">Wireless Charger</a></li>
-                                        <li class="list-inline-item"><a href="#">Company </a></li>
-                                        <li class="list-inline-item"><a href="#">Iphone 7S Plus</a></li>
-                                        <li class="list-inline-item"><a href="#">Nova Fashion</a></li>
-                                        <li class="list-inline-item"><a href="#">Android Phone</a></li>
-                                        <li class="list-inline-item"><a href="#">IOS Phone</a></li>
-                                        <li class="list-inline-item"><a href="#">OPPO</a></li>
-                                        <li class="list-inline-item"><a href="#">USB</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="nov-html col-xl-12 col-lg-12 col-md-12">
-                            <div class="block">
-                                <div class="block_content">
-                                    <ul class="list-inline">
-                                        <li class="list-inline-item"><a href="#">Kingston 128GB</a></li>
-                                        <li class="list-inline-item"><a href="#">Bluetooth Motorcycle Headset</a></li>
-                                        <li class="list-inline-item"><a href="#">Speaker Headphone</a></li>
-                                        <li class="list-inline-item"><a href="#">Huawei</a></li>
-                                        <li class="list-inline-item"><a href="#">Zippo</a></li>
-                                        <li class="list-inline-item"><a href="#">Digimart</a></li>
-                                        <li class="list-inline-item"><a href="#">Novamart</a></li>
-                                        <li class="list-inline-item"><a href="#">Flatware</a></li>
-                                        <li class="list-inline-item"><a href="#">Blackberry</a></li>
-                                        <li class="list-inline-item"><a href="#">Hitachi</a></li>
-                                        <li class="list-inline-item"><a href="#">Sony</a></li>
-                                        <li class="list-inline-item"><a href="#">Nikon</a></li>
-                                        <li class="list-inline-item"><a href="#">Fujifilm</a></li>
-                                        <li class="list-inline-item"><a href="#">Keyboard E-Blue</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div></div>
+                    </div>
+                    <!-- /.module-body -->
+                </div>
+                <!-- /.col -->
+
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="module-heading">
+                        <h4 class="module-title">Customer Service</h4>
+                    </div>
+                    <!-- /.module-heading -->
+
+                    <div class="module-body">
+                        <ul class='list-unstyled'>
+                            <li class="first"><a href="#" title="Contact us">My Account</a></li>
+                            <li><a href="#" title="About us">Order History</a></li>
+                            <li><a href="#" title="faq">FAQ</a></li>
+                            <li><a href="#" title="Popular Searches">Specials</a></li>
+                            <li class="last"><a href="#" title="Where is my order?">Help Center</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.module-body -->
+                </div>
+                <!-- /.col -->
+
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="module-heading">
+                        <h4 class="module-title">Corporation</h4>
+                    </div>
+                    <!-- /.module-heading -->
+
+                    <div class="module-body">
+                        <ul class='list-unstyled'>
+                            <li class="first"><a title="Your Account" href="#">About us</a></li>
+                            <li><a title="Information" href="#">Customer Service</a></li>
+                            <li><a title="Addresses" href="#">Company</a></li>
+                            <li><a title="Addresses" href="#">Investor Relations</a></li>
+                            <li class="last"><a title="Orders History" href="#">Advanced Search</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.module-body -->
+                </div>
+                <!-- /.col -->
+
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="module-heading">
+                        <h4 class="module-title">Why Choose Us</h4>
+                    </div>
+                    <!-- /.module-heading -->
+
+                    <div class="module-body">
+                        <ul class='list-unstyled'>
+                            <li class="first"><a href="#" title="About us">Shopping Guide</a></li>
+                            <li><a href="#" title="Blog">Blog</a></li>
+                            <li><a href="#" title="Company">Company</a></li>
+                            <li><a href="#" title="Investor Relations">Investor Relations</a></li>
+                            <li class=" last"><a href="contact-us.html" title="Suppliers">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.module-body -->
+                </div>
             </div>
         </div>
     </div>
-    <div id="nov-copyright">
+    <div class="copyright-bar">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6 align-items-center justify-content-start d-flex flex-center">
-                    <span>
-            Copyright © 2018 Vinovathemes. All Rights Reserved
-          </span>
+            <div class="col-xs-12 col-sm-4 no-padding social">
+                <ul class="link">
+                    <li class="fb pull-left"><a target="_blank" rel="nofollow" href="#" title="Facebook"></a></li>
+                    <li class="tw pull-left"><a target="_blank" rel="nofollow" href="#" title="Twitter"></a></li>
+                    <li class="googleplus pull-left"><a target="_blank" rel="nofollow" href="#" title="GooglePlus"></a></li>
+                    <li class="rss pull-left"><a target="_blank" rel="nofollow" href="#" title="RSS"></a></li>
+                    <li class="pintrest pull-left"><a target="_blank" rel="nofollow" href="#" title="PInterest"></a></li>
+                    <li class="linkedin pull-left"><a target="_blank" rel="nofollow" href="#" title="Linkedin"></a></li>
+                    <li class="youtube pull-left"><a target="_blank" rel="nofollow" href="#" title="Youtube"></a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 no-padding copyright"><a target="_blank" href="https://www.templateshub.net">Templates Hub</a> </div>
+            <div class="col-xs-12 col-sm-4 no-padding">
+                <div class="clearfix payment-methods">
+                    <ul>
+
+                        <li><img src="{{asset('assets/front/assets/images/payments/1.png')}}" alt=""></li>
+                        <li><img src="{{asset('assets/front/assets/images/payments/2.png')}}" alt=""></li>
+                        <li><img src="{{asset('assets/front/assets/images/payments/3.png')}}" alt=""></li>
+                        <li><img src="{{asset('assets/front/assets/images/payments/4.png')}}" alt=""></li>
+                        <li><img src="{{asset('assets/front/assets/images/payments/5.png')}}" alt=""></li>
+                    </ul>
                 </div>
-                <div class="payment-image col-md-6 align-items-center justify-content-end d-flex flex-center mt-xs-20">
-                    <a href="#"><img class="img-fluid" src="/savemart/modules/novthemeconfig/images/payment-logo-1.png" alt="payment" title="Payment" /></a>
-                </div>
+                <!-- /.payment-methods -->
             </div>
         </div>
     </div>
 </footer>
+<!-- ============================================================= FOOTER : END============================================================= -->
+
+<!-- For demo purposes – can be removed on production -->
+
+<!-- For demo purposes – can be removed on production : End -->
+
+<!-- JavaScripts placed at the end of the document so the pages load faster -->
+<script src="{{asset('assets/front/assets/js/jquery-1.11.1.min.js')}}"></script>
+<script src="{{asset('assets/front/assets/js/bootstrap.min.js')}}"></script>
+<script src="{{asset('assets/front/assets/js/bootstrap-hover-dropdown.min.js')}}"></script>
+<script src="{{asset('assets/front/assets/js/owl.carousel.min.js')}}"></script>
+<script src="{{asset('assets/front/assets/js/echo.min.js')}}"></script>
+<script src="{{asset('assets/front/assets/js/jquery.easing-1.3.min.js')}}"></script>
+<script src="{{asset('assets/front/assets/js/bootstrap-slider.min.js')}}"></script>
+<script src="{{asset('assets/front/assets/js/jquery.rateit.min.js')}}"></script>
+<script src="{{asset('assets/front/assets/js/lightbox.min.js')}}"></script>
+<script src="{{asset('assets/front/assets/js/bootstrap-select.min.js')}}"></script>
+<script src="{{asset('assets/front/assets/js/wow.min.js')}}"></script>
+<script src="{{asset('assets/front/assets/js/scripts.js')}}"></script>
+
+
+<script>
+
+    $(".update-cart").change(function (e) {
+
+        e.preventDefault();
+        var ele = $(this);
+        // alert('ffff');
+        $.ajax({
+            url: '{{ route('update.cart') }}',
+            method: "patch",
+            data: {
+                _token: '{{ csrf_token() }}',
+                id: ele.parents("tr").attr("data-id"),
+                quantity: ele.parents("tr").find(".quantity").val()
+            },
+            success: function (response) {
+                window.location.reload();
+            }
+        });
+    });
+
+    $(".remove-from-cart").click(function (e) {
+        // alert('sss');
+        e.preventDefault();
+        var ele = $(this);
+        if(confirm("Are you sure want to remove?")) {
+            $.ajax({
+                url: '{{ route('remove.from.cart') }}',
+                method: "DELETE",
+                data: {
+                    _token: '{{ csrf_token() }}',
+                    id: ele.parents("tr").attr("data-id")
+                },
+                success: function (response) {
+                    window.location.reload();
+                }
+            });
+        }
+    });
+
+</script>
+
